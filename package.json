@@ -1,0 +1,46 @@
+{
+  "name": "react-native-collapsible-section-list",
+  "version": "0.0.1",
+  "description": "Collapsible section list component for react-native",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "build": "rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [
+    "react-native",
+    "collapsible"
+  ],
+  "author": "jzhangdev <zhangjie9477@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/react": "^18.0.28",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0",
+    "react-native": "^0.71.4",
+    "rollup": "^3.19.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.0.28",
+    "react": "^18.2.0",
+    "react-native": "^0.71.4",
+    "tslib": "^2.5.0"
+  },
+  "dependencies": {
+    "rollup-plugin-dts": "^5.2.0"
+  }
+}
