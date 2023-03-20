@@ -1,6 +1,6 @@
 {
   "name": "react-native-collapsible-section-list",
-  "version": "0.0.1",
+  "version": "0.0.2-0",
   "description": "Collapsible section list component for react-native",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
