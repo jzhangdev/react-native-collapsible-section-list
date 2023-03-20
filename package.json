@@ -2,6 +2,10 @@
   "name": "react-native-collapsible-section-list",
   "version": "0.0.2-1",
   "description": "Collapsible section list component for react-native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jzhangdev/react-native-collapsible-section-list.git"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
