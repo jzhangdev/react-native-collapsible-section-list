@@ -14,7 +14,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "lint": "eslint .",
-    "build": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs",
+    "prepublish": "pnpm run build"
   },
   "keywords": [
     "react-native",

@@ -1,4 +1,4 @@
 export type SectionItemT = {
-  data: Array<any>;
-  [key: string]: any;
+  data: Array<unknown>;
+  [key: string]: unknown;
 };
