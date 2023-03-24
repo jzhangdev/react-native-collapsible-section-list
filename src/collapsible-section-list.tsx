@@ -1,13 +1,13 @@
-import { VirtualizedList, VirtualizedListProps } from 'react-native';
+import { FlatList, FlatListProps } from 'react-native';
 import {
-  ICollapsibleSectionProps,
   CollapsibleSection,
+  ICollapsibleSectionProps,
 } from './collapsible-section';
 import { SectionItemT } from './types';
 
 interface ICollapsibleSectionListProps<T extends SectionItemT>
   extends Pick<
-      VirtualizedListProps<T>,
+      FlatListProps<T>,
       'keyExtractor' | 'contentContainerStyle' | 'style'
     >,
     Pick<
@@ -22,14 +22,12 @@ export function CollapsibleSectionList<T extends SectionItemT>({
   renderSectionHeader,
   renderSectionContent,
   sectionStyle,
-  ...virtualizedListProps
+  ...flatListProps
 }: ICollapsibleSectionListProps<T>) {
   return (
-    <VirtualizedList<T>
-      {...virtualizedListProps}
+    <FlatList<T>
+      {...flatListProps}
       data={sections}
-      getItem={(section, index) => section[index]}
-      getItemCount={() => sections.length}
       renderItem={({ item }) => (
         <CollapsibleSection
           item={item}
